@@ -82,7 +82,6 @@ namespace CSharpTutorials
             UpdateBoard();
         }
 
-
         private void UpdateBoard()
         {
             game.board.Grid[Position.P1position, Position.p2position].cellHolder = Name;
@@ -245,6 +244,7 @@ namespace CSharpTutorials
                 // If the current cell contains an obstacle, inform the player
                 Console.WriteLine("Player cannot collect gem. Obstacle in the way.");
             }
+            
         }
     }
 
