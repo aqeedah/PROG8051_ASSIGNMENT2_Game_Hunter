@@ -238,6 +238,7 @@ namespace CSharpTutorials
             {
                 player.CountGem++;
                 playercurrentCell.cellHolder = "-"; // Remove the collected gem from the board
+                Console.WriteLine($"collected gem by {player.Name} is: {player.CountGem}" );
             }
             else if (playercurrentCell.cellHolder == "O")
             {
