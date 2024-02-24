@@ -116,7 +116,7 @@ namespace CSharpTutorials
 
         private void InitializeGame()
         {
-            // Initialize all cells as empty
+            // Initialize the game with all empty cells
             for (int i = 0; i < 6; i++)
             {
                 for (int j = 0; j < 6; j++)
@@ -238,6 +238,7 @@ namespace CSharpTutorials
             {
                 player.CountGem++;
                 playercurrentCell.cellHolder = "-"; // Remove the collected gem from the board
+                Console.WriteLine($"collected gem by {player.Name} is: {player.CountGem}" );
             }
             else if (playercurrentCell.cellHolder == "O")
             {
